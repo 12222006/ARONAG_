@@ -111,27 +111,27 @@
         
         <label for="Usuario">Interesado/a en..</label>
         <!--Selects&Option--> 
-        <select name="Interesado/a en:" id="Usuario" class="user">
-            <option value="user1">Mejora Rendimiento Deportivo</option>
-            <option  value="user2">Entrenameinto Hipertrofia</option>
-            <option  value="user3">Asesoramiento Nutricional</option>
-            <option value="user4">Combo  (Interesado en 2 o mas de los servicios)</option>
+        <select name="Interesado/a en:" id="Usuario" class="user" required>
+            <option value="Mejora Rendimiento Deportivo">Mejora Rendimiento Deportivo</option>
+            <option  value="Entrenameinto Hipertrofia">Entrenameinto Hipertrofia</option>
+            <option  value="Asesoramiento Nutricional">Asesoramiento Nutricional</option>
+            <option value="Combo  (Interesado en 2 o mas de los servicios)">Combo  (Interesado en 2 o mas de los servicios)</option>
         </select>
         <!--Datalist&Option--> 
         <label>Referente</label>
-        <input list="referente" name="referente" placeholder="Quien te ha recomendado el servicio.">
+        <input list="referente" name="referente" placeholder="Quien te ha recomendado el servicio." required>
         <datalist id="referente" name="type_of_user">
             <option value="Un Amigo">Un Amigo te recomendo</option>
             <option value="Redes Sociales">Lo viste en Redes Sociales</option>
             
             </datalist>
             <label>Telefono</label>
-            <input type="number" placeholder="Numero de Telefono">
+            <input type="number" placeholder="Numero de Telefono" minlength="9" required> 
         
         
         <!--Textarea--> 
         <label for="solicitud" class="mensagge" name="Mensaje">Mensaje</label >
-        <textarea placeholder="Deja tu mensaje... " id="solicitud"></textarea>
+        <textarea placeholder="Deja tu mensaje... " id="solicitud" required></textarea>
         <input type="submit" name="Enviar" placeholder="Enviar">
 
         
